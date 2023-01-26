@@ -14,12 +14,14 @@ def fetch_notes():
 
     
 def delete_note(id):
+    note_id = sys.argv[1]
     url = f'https://63a52acf821953d4f2c41d5e.mockapi.io/api/v1/notes/{note_id}'
     response = requests.delete(url)
     print(response.json())
 
 
 def update_note(id, content):
+    note_id = sys.argv[2]
     url = f'https://63a52acf821953d4f2c41d5e.mockapi.io/api/v1/notes/{note_id}'
     data = {"content": content}
     response = requests.put(url, json=data)
