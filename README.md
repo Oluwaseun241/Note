@@ -33,9 +33,9 @@ python main.py delete-note <id-of-note>
 python main.py update-note <id-of-note> "new note content"
 ```
 
-## Note
+## API details
 
-note content should be in json format
+Note content should be in json format
 ```
 {"content": content}
 ```
